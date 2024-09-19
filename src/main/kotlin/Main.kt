@@ -89,7 +89,13 @@ fun main() {
 
     val fruit: MutableSet<String> = mutableSetOf("apple", "banana", "cherry", "cherry")
     val fruitLocked: Set<String> = fruit
-    //Assign mutable set to set to prenvent modification.
+    //Add and remove items in a set
+    fruit.add("dragonfruit")    // Add "dragonfruit" to the set
+    println(fruit)              // [apple, banana, cherry, dragonfruit]
+
+    fruit.remove("dragonfruit") // Remove "dragonfruit" from the set
+    println(fruit)
+    //Assign mutableset to set to prenvent modification.
     for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
