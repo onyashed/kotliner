@@ -119,7 +119,7 @@ fun main() {
     //EXERCISE TWO
     val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
     val requested = "smtp"
-    val isSupported = requested in SUPPORTED
+    val isSupported = requested.uppercase() in SUPPORTED
     println("Support for $requested: $isSupported")
     for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
