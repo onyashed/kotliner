@@ -96,6 +96,17 @@ fun main() {
     fruit.remove("dragonfruit") // Remove "dragonfruit" from the set
     println(fruit)
     //Assign mutableset to set to prenvent modification.
+    // Read-only map
+    val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+    println(readOnlyJuiceMenu)
+// {apple=100, kiwi=190, orange=100}
+    //key value pairs.
+    //Manipulating a mutable map
+    val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "pineapple" to 120)
+    juiceMenu["coconut"] = 150 // Add key "coconut" with value 150 to the map
+    println(juiceMenu)
+    juiceMenu.remove("orange")    // Remove key "orange" from the map
+    println(juiceMenu)
     for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
