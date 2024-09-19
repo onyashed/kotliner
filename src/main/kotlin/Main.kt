@@ -126,8 +126,8 @@ fun main() {
     val n = 2
     val obj = "Hello"
     //When better than if
-
-when (obj) {
+// Greeting
+    when (obj) {
     // Checks whether obj equals to "1"
     "1" -> println("One")
     // Checks whether obj equals to "Hello"
@@ -135,7 +135,17 @@ when (obj) {
     // Default statement
     else -> println("Unknown")     
 }
-// Greeting
+//Advanced use of when statement.
+ val trafficLightState = "Red" // This can be "Green", "Yellow", or "Red"
+
+    val trafficAction = when {
+        trafficLightState == "Green" -> "Go"
+        trafficLightState == "Yellow" -> "Slow down"
+        trafficLightState == "Red" -> "Stop"
+        else -> "Malfunction"
+    }
+
+    println(trafficAction)
     println("$n is spelt as '${number2word[n]}'")
     for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
