@@ -124,6 +124,18 @@ fun main() {
     //Exercise 3
     val number2word = mapOf(1 to "one", 2 to "two", 3 to "three")
     val n = 2
+    val obj = "Hello"
+    //When better than if
+
+when (obj) {
+    // Checks whether obj equals to "1"
+    "1" -> println("One")
+    // Checks whether obj equals to "Hello"
+    "Hello" -> println("Greeting")
+    // Default statement
+    else -> println("Unknown")     
+}
+// Greeting
     println("$n is spelt as '${number2word[n]}'")
     for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
