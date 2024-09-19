@@ -121,6 +121,10 @@ fun main() {
     val requested = "smtp"
     val isSupported = requested.uppercase() in SUPPORTED
     println("Support for $requested: $isSupported")
+    //Exercise 3
+    val number2word = mapOf(1 to "one", 2 to "two", 3 to "three")
+    val n = 2
+    println("$n is spelt as '${number2word[n]}'")
     for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
