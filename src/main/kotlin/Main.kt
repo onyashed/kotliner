@@ -111,10 +111,16 @@ fun main() {
     println("This map has ${readOnlyJuiceMenu.count()} key-value pairs")
 // This map has 3 key-value pairs
     // Summing up items in a list programatically.
+    //
     val greenNumbers = listOf(1, 4, 23)
     val redNumbers = listOf(17, 2)
     val totalCount = greenNumbers.count() + redNumbers.count()
     println(totalCount)
+    //EXERCISE TWO
+    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
+    val requested = "smtp"
+    val isSupported = requested in SUPPORTED
+    println("Support for $requested: $isSupported")
     for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
