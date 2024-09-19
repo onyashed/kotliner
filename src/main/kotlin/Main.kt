@@ -19,7 +19,7 @@ fun main() {
         val age = 20
         println("$name_client is $age years old")
 
-
+//Edited onlilne
 // Some customers leave the queue
     var customers_cli = 8
 
